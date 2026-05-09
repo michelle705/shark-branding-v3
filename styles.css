@@ -215,8 +215,8 @@ button {
 .section--white    { background: var(--c-white); }
 .section--gray     { background: var(--c-bg-secondary); }
 .section--tertiary { background: var(--c-bg-tertiary); }
-.section--dark     { background: var(--c-bg-secondary); } /* light gray — was navy */
-.section--navy     { background: var(--c-navy); }         /* reserve for footer/CTA */
+.section--dark     { background: var(--c-navy); }
+.section--navy     { background: var(--c-navy); }
 
 /* Grid system */
 .grid { display: grid; gap: var(--sp-5); }
