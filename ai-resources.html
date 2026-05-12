@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -49,7 +49,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <style>
 
-/* ── Page-level fade-in ── */
+/* -- Page-level fade-in -- */
 @keyframes fadeUp {
   from { opacity:0; transform:translateY(20px); }
   to   { opacity:1; transform:translateY(0); }
@@ -59,9 +59,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .fade-up-d2 { animation-delay:.2s; }
 .fade-up-d3 { animation-delay:.3s; }
 
-/* ════════════════════════════════════════════
+/* --------------------------------------------
    HERO
-   ════════════════════════════════════════════ */
+   -------------------------------------------- */
 .res-hero {
   background: linear-gradient(140deg, #061C2C 0%, #0d2c3e 55%, #0A3140 100%);
   padding: 168px 0 100px;
@@ -116,9 +116,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 /* res-hero-stat removed */
 
-/* ════════════════════════════════════════════
+/* --------------------------------------------
    FILTER BAR
-   ════════════════════════════════════════════ */
+   -------------------------------------------- */
 .res-filter-bar {
   background: #fff;
   border-bottom: 1px solid var(--gray-mid);
@@ -146,9 +146,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   background: var(--blue); border-color: var(--blue); color: #fff;
 }
 
-/* ════════════════════════════════════════════
+/* --------------------------------------------
    MAIN LAYOUT
-   ════════════════════════════════════════════ */
+   -------------------------------------------- */
 .res-body { padding: 72px 0 96px; background: #F7F9FB; }
 .res-start-grid {
   display: grid;
@@ -191,7 +191,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 .res-start-link:hover { color: var(--blue); }
 
-/* ── FEATURED POST ── */
+/* -- FEATURED POST -- */
 .res-featured {
   background: #fff;
   border-radius: 24px;
@@ -292,14 +292,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 .res-featured-visual-badge strong { color: #fff; }
 
-/* ── POST GRID ── */
+/* -- POST GRID -- */
 .res-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
-/* ── POST CARD ── */
+/* -- POST CARD -- */
 .post-card {
   background: #fff;
   border: 1px solid var(--gray-mid);
@@ -393,7 +393,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .thumb--teal  .post-card-thumb-bg { background: linear-gradient(135deg,#0A3140,#0E6F86); }
 .thumb--deep  .post-card-thumb-bg { background: linear-gradient(135deg,#081825,#14526A); }
 
-/* ── INLINE CTA BANNER ── */
+/* -- INLINE CTA BANNER -- */
 .res-cta-banner {
   grid-column: 1 / -1;
   background: var(--navy);
@@ -435,14 +435,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   position: relative; z-index: 1;
 }
 
-/* ── LOAD MORE ── */
+/* -- LOAD MORE -- */
 .res-load-more {
   text-align: center; margin-top: 48px;
 }
 
-/* ════════════════════════════════════════════
+/* --------------------------------------------
    MOBILE
-   ════════════════════════════════════════════ */
+   -------------------------------------------- */
 @media (max-width:1024px) {
   .res-start-grid { grid-template-columns:1fr 1fr; }
   .res-grid { grid-template-columns: repeat(2,1fr); }
@@ -536,11 +536,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      ============================================================ -->
 <div class="res-filter-bar">
   <div class="container">
-    <!-- ── CATEGORY FILTER ─────────────────────────────────────
+    <!-- -- CATEGORY FILTER -------------------------------------
          To add a category: copy a filter-pill button, set a new
          data-category value, and use that same value on your post
          cards' data-category attribute. The JS handles the rest.
-         ─────────────────────────────────────────────────────── -->
+         ------------------------------------------------------- -->
     <div class="res-filter-inner" id="resourcesFilter">
       <button class="filter-pill active" data-category="all">All Resources</button>
       <button class="filter-pill" data-category="ai-visibility">AI Visibility</button>
@@ -590,19 +590,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    <!-- ════════════════════════════════════════════════════════
+    <!-- --------------------------------------------------------
          FEATURED POST
-         ════════════════════════════════════════════════════════
+         --------------------------------------------------------
          To update: edit the title, excerpt, date, icon, and href.
          Keep class "res-featured" and data-category matching a pill.
-         ════════════════════════════════════════════════════════ -->
+         -------------------------------------------------------- -->
     <a class="res-featured fade-up" href="/blog-ntbc-ai-ready-partnership" data-category="partnership">
       <div class="res-featured-copy">
         <div class="res-featured-tag"><span style="background:var(--blue);color:#fff;padding:3px 8px;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:.1em">FEATURED</span> Partnership</div>
         <h2 class="res-featured-title">AI-Ready: Shark Branding Solutions Partners with North Tampa Bay Chamber to Future-Proof Local Business</h2>
         <p class="res-featured-excerpt">A landmark partnership brings the Found, Trusted, Chosen framework to every North Tampa Bay Chamber member. Learn how local businesses can now claim a free AI Visibility Report and get a clear picture of how they appear across search, maps, and AI-powered discovery.</p>
         <div class="res-featured-footer">
-          <span class="res-featured-meta">April 15, 2026  ·  6 min read</span>
+          <span class="res-featured-meta">April 15, 2026  �  6 min read</span>
           <span class="res-read-btn">Read the guide <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </div>
@@ -613,24 +613,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </a>
-    <!-- ── END FEATURED POST ── -->
+    <!-- -- END FEATURED POST -- -->
 
 
-    <!-- ════════════════════════════════════════════════════════
+    <!-- --------------------------------------------------------
          POST GRID
-         ════════════════════════════════════════════════════════
+         --------------------------------------------------------
          HOW TO ADD A NEW POST:
            1. Copy any post-card <a> block below
-           2. Paste it just above the ▼▼▼ ADD NEW POSTS HERE comment
+           2. Paste it just above the ??? ADD NEW POSTS HERE comment
            3. Update: data-category, thumb--color class,
               post-card-num, icon, category label, date, title,
               excerpt, and the href on the outer <a>
            Thumb color options: thumb--navy  thumb--teal  thumb--deep
-         ════════════════════════════════════════════════════════ -->
+         -------------------------------------------------------- -->
     <div class="res-grid" id="resourcesGrid">
 
 
-      <!-- ── POST 1 ── -->
+      <!-- -- POST 1 -- -->
       <a class="post-card fade-up fade-up-d1" href="/blog-ai-map-consistent-business-listings" data-category="ai-visibility">
         <div class="post-card-thumb">
           <img src="https://cdn.marblism.com/7iy6leaSINV.webp" alt="AI map showing consistent business listings" loading="lazy">
@@ -646,10 +646,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="post-card-read">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <!-- ── END POST 1 ── -->
+      <!-- -- END POST 1 -- -->
 
 
-      <!-- ── POST 2 ── -->
+      <!-- -- POST 2 -- -->
       <a class="post-card fade-up fade-up-d2" href="/blog-trusted-ai-review-responses" data-category="strategy">
         <div class="post-card-thumb">
           <img src="https://cdn.marblism.com/9UR7nYzKUsH.webp" alt="AI-assisted review responses building local trust" loading="lazy">
@@ -665,10 +665,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="post-card-read">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <!-- ── END POST 2 ── -->
+      <!-- -- END POST 2 -- -->
 
 
-      <!-- ── POST 3 ── -->
+      <!-- -- POST 3 -- -->
       <a class="post-card fade-up fade-up-d3" href="/blog-ai-funnel-chatgpt-new-front-door" data-category="ai-visibility">
         <div class="post-card-thumb">
           <img src="https://cdn.marblism.com/WCQ37axSRBo.webp" alt="ChatGPT as the new front door for local business customers" loading="lazy">
@@ -680,24 +680,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="post-card-date">Apr 7, 2026</span>
           </div>
           <h3 class="post-card-title">The AI Funnel: Why ChatGPT Is the New Front Door for Your Customers</h3>
-          <p class="post-card-excerpt">AI doesn't give customers 100 options—it gives them three. Learn how the AI Funnel works and what it takes to land in that top-three shortlist for your industry.</p>
+          <p class="post-card-excerpt">AI doesn't give customers 100 options�it gives them three. Learn how the AI Funnel works and what it takes to land in that top-three shortlist for your industry.</p>
           <span class="post-card-read">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <!-- ── END POST 3 ── -->
+      <!-- -- END POST 3 -- -->
 
 
-      <!-- ════════════════════════════════════════════════════
+      <!-- ----------------------------------------------------
            INLINE CTA BANNER
            To reposition: cut this entire block and paste it
            between any two post cards. Edit h3 and p to change
            the message.
-           ════════════════════════════════════════════════════ -->
+           ---------------------------------------------------- -->
       <div style="grid-column:1/-1" data-category="all">
         <div class="res-cta-banner">
           <div class="res-cta-banner-copy">
             <h3>Not sure how your business looks to AI right now?</h3>
-            <p>Get a free visibility report and see exactly where you stand across AI search, local search, and digital authority—no commitment required.</p>
+            <p>Get a free visibility report and see exactly where you stand across AI search, local search, and digital authority�no commitment required.</p>
           </div>
           <div class="res-cta-banner-actions">
             <a href="/free-report" class="btn btn-primary btn-lg">Get the Free Report</a>
@@ -705,10 +705,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
       </div>
-      <!-- ── END INLINE CTA BANNER ── -->
+      <!-- -- END INLINE CTA BANNER -- -->
 
 
-      <!-- ── POST 4 ── -->
+      <!-- -- POST 4 -- -->
       <a class="post-card" href="/how-to-rank-on-chatgpt-for-local-businesses" data-category="ai-visibility">
         <div class="post-card-thumb">
           <img src="/ai-visibility-hero.webp" alt="How to rank on ChatGPT for local businesses" loading="lazy">
@@ -724,10 +724,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="post-card-read">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <!-- ── END POST 4 ── -->
+      <!-- -- END POST 4 -- -->
 
 
-      <!-- ── POST 5 ── -->
+      <!-- -- POST 5 -- -->
       <a class="post-card" href="/blog-end-of-phone-tag-google-ai-check-prices" data-category="ai-visibility">
         <div class="post-card-thumb">
           <img src="https://cdn.marblism.com/pAHnAFvGQW-.webp" alt="End of phone tag with Google AI price check" loading="lazy">
@@ -743,10 +743,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="post-card-read">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <!-- ── END POST 5 ── -->
+      <!-- -- END POST 5 -- -->
 
 
-      <!-- ── POST 6 ── -->
+      <!-- -- POST 6 -- -->
       <a class="post-card" href="/blog-hvac-invisible-to-number-2-local-search" data-category="local-seo">
         <div class="post-card-thumb">
           <img src="https://cdn.marblism.com/mUE0AsHh_PI.webp" alt="HVAC business going from invisible to number 2 in local search" loading="lazy">
@@ -762,10 +762,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="post-card-read">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <!-- ── END POST 6 ── -->
+      <!-- -- END POST 6 -- -->
 
 
-      <!-- ── POST 7 ── -->
+      <!-- -- POST 7 -- -->
       <a class="post-card" href="/blog-google-reviews-ai-recommendations" data-category="strategy">
         <div class="post-card-thumb">
           <img src="https://cdn.marblism.com/y52lgWLfO0y.webp" alt="Turning Google reviews into AI recommendations" loading="lazy">
@@ -777,14 +777,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="post-card-date">Mar 15, 2026</span>
           </div>
           <h3 class="post-card-title">The Future Is AI Visibility: Turning Google Reviews Into AI Recommendations</h3>
-          <p class="post-card-excerpt">Your Google reviews are no longer just feedback—they're AI visibility signals. Learn how to write and collect reviews that AI can actually read, trust, and use to recommend your business.</p>
+          <p class="post-card-excerpt">Your Google reviews are no longer just feedback�they're AI visibility signals. Learn how to write and collect reviews that AI can actually read, trust, and use to recommend your business.</p>
           <span class="post-card-read">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <!-- ── END POST 7 ── -->
+      <!-- -- END POST 7 -- -->
 
 
-      <!-- ── POST 8 ── -->
+      <!-- -- POST 8 -- -->
       <a class="post-card" href="/blog-ai-funnel-chatgpt-gemini-path-to-purchase" data-category="ai-visibility">
         <div class="post-card-thumb">
           <img src="https://cdn.marblism.com/8f2m0RQROII.webp" alt="ChatGPT and Gemini reshaping the path to purchase" loading="lazy">
@@ -800,10 +800,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="post-card-read">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <!-- ── END POST 8 ── -->
+      <!-- -- END POST 8 -- -->
 
 
-      <!-- ── POST 9 ── -->
+      <!-- -- POST 9 -- -->
       <a class="post-card" href="/blog-google-ai-price-check-ready-to-be-chosen" data-category="ai-visibility">
         <div class="post-card-thumb">
           <img src="https://cdn.marblism.com/JgoUj9sIFN7.webp" alt="Google AI price check calling local businesses" loading="lazy">
@@ -819,10 +819,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="post-card-read">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <!-- ── END POST 9 ── -->
+      <!-- -- END POST 9 -- -->
 
 
-      <!-- ── POST 10 ── -->
+      <!-- -- POST 10 -- -->
       <a class="post-card" href="/blog-24-hour-rule-local-trust-ai" data-category="strategy">
         <div class="post-card-thumb">
           <img src="https://cdn.marblism.com/Pa2DPW_JehC.webp" alt="The 24-Hour Rule: AI-Assisted Review Responses for Local Trust" loading="lazy">
@@ -834,11 +834,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="post-card-date">Apr 14, 2026</span>
           </div>
           <h3 class="post-card-title">The 24-Hour Rule: Mastering Local Trust with AI</h3>
-          <p class="post-card-excerpt">If you aren't responding to reviews within 24 hours, you're handing your competitors your market share. Learn how AI-assisted responses build local trust and boost your SEO—without sounding like a robot.</p>
+          <p class="post-card-excerpt">If you aren't responding to reviews within 24 hours, you're handing your competitors your market share. Learn how AI-assisted responses build local trust and boost your SEO�without sounding like a robot.</p>
           <span class="post-card-read">Read the guide <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </div>
       </a>
-      <!-- ── END POST 10 ── -->
+      <!-- -- END POST 10 -- -->
 
       <!-- ?????? POST 11 ?????? -->
       <a class="post-card" href="/blog-seo-old-school-geo-ai-shift" data-category="geo">
@@ -913,22 +913,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- END POST 14 -->
 
 
-      <!-- ════════════════════════════════════════════════════
-           ▼▼▼  ADD NEW POSTS HERE  ▼▼▼
+      <!-- ----------------------------------------------------
+           ???  ADD NEW POSTS HERE  ???
            Copy any post-card block above and paste it here.
            Update the number, color class, icon, category,
            date, title, excerpt, and href. Done.
-           ════════════════════════════════════════════════════ -->
+           ---------------------------------------------------- -->
 
 
     </div>
-    <!-- ── END POST GRID ── -->
+    <!-- -- END POST GRID -- -->
 
 
-    <!-- ── LOAD MORE ─────────────────────────────────────────
+    <!-- -- LOAD MORE -----------------------------------------
          When you have more posts, either add them to the grid
          above, or link this button to a page-2 URL.
-         ─────────────────────────────────────────────────────  -->
+         -----------------------------------------------------  -->
     <div class="res-load-more">
       <a href="#" class="btn btn-outline btn-lg">Load More Resources</a>
     </div>
@@ -946,7 +946,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container cta-inner">
     <div class="section-label section-label--light">Ready to Take Action?</div>
     <h2 class="cta-headline">See how your business looks to AI before your competitors figure this out</h2>
-    <p class="cta-sub">The free visibility report shows you exactly where you stand across AI search, local search, and digital trust signals—in plain language.</p>
+    <p class="cta-sub">The free visibility report shows you exactly where you stand across AI search, local search, and digital trust signals�in plain language.</p>
     <div class="cta-actions">
       <a href="/free-report" class="btn btn-primary btn-xl">Get the Free Report</a>
       <a href="/contact" class="btn btn-ghost btn-xl">Speak with the Team</a>
@@ -962,7 +962,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="footer-inner">
     <div class="footer-brand">
       <img src="/logo.webp" alt="Shark Branding Solutions">
-      <p>Your customers are already searching.<br>The question is — are they finding you?</p>
+      <p>Your customers are already searching.<br>The question is � are they finding you?</p>
       <div class="footer-social">
         <a href="https://www.linkedin.com/company/shark-branding-solutions" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg></a>
         <a href="https://www.facebook.com/sharkbrandingsolutions" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -999,7 +999,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     });
   });
-  // Load more — hide since all posts shown
+  // Load more � hide since all posts shown
   var loadMore = document.querySelector('.res-load-more');
   if(loadMore) loadMore.style.display = 'none';
 
