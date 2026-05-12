@@ -114,25 +114,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   font-size: 17px; color: rgba(255,255,255,.65);
   line-height: 1.75; max-width: 520px;
 }
-.res-hero-stat {
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
-  border-radius: 20px;
-  padding: 32px 36px;
-  text-align: center;
-  flex-shrink: 0;
-  min-width: 180px;
-}
-.res-hero-stat-num {
-  font-family: var(--font-display);
-  font-size: 52px; font-weight: 400;
-  color: var(--blue); line-height: 1;
-  margin-bottom: 10px;
-}
-.res-hero-stat-label {
-  font-size: 13px; color: rgba(255,255,255,.55);
-  line-height: 1.5;
-}
+/* res-hero-stat removed */
 
 /* ════════════════════════════════════════════
    FILTER BAR
@@ -300,10 +282,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .res-featured-visual-badge {
   position: absolute; bottom: 28px; left: 28px; right: 28px;
   background: rgba(255,255,255,.1);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.2);
   border-radius: 12px; padding: 14px 18px;
   z-index: 1;
+  background: rgba(6,28,44,.75);
 }
 .res-featured-visual-badge p {
   font-size: 13px; color: rgba(255,255,255,.8); line-height: 1.5; margin: 0;
@@ -541,9 +523,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h1>Practical guides for AI visibility, <em>SEO</em>, GEO, and AEO</h1>
       <p class="res-hero-sub">Tips, frameworks, and real-world insights to help local businesses improve their visibility in traditional search and AI search without separating SEO, GEO, and AEO into different silos.</p>
     </div>
-    <div class="res-hero-stat fade-up fade-up-d2">
-      <div class="res-hero-stat-num">10+</div>
-      <div class="res-hero-stat-label">Free guides &amp;<br>resources</div>
+    <div class="fade-up fade-up-d2" style="display:flex;flex-direction:column;gap:16px;justify-content:flex-end;padding-bottom:4px">
+      <div style="font-size:var(--t-xs);font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)">14 free guides</div>
+      <div style="font-size:var(--t-sm);color:rgba(255,255,255,.5);line-height:1.6;max-width:200px">SEO &middot; GEO &middot; AEO &middot; AI Visibility &middot; Local Search</div>
     </div>
   </div>
 </section>
@@ -578,27 +560,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="res-body">
   <div class="container">
 
-    <div class="res-start-grid fade-up">
-      <div class="res-start-card">
-        <div class="section-label" style="margin-bottom:12px">Start Here</div>
-        <h2>Choose the guide that matches the question you need answered first.</h2>
-        <p>If you are new to AI visibility, start with the practical framework pages below. If you already know the problem, jump straight into the deeper guides and case studies.</p>
-        <a href="/free-report" class="btn btn-primary">Get the Free Report First</a>
-      </div>
-      <div class="res-start-card">
-        <h3>Need the big-picture difference?</h3>
-        <p>Start with the SEO, GEO, and AEO comparison if you need a plain-English breakdown of what changed and what still matters.</p>
-        <a class="res-start-link" href="/seo-vs-geo-vs-aeo-for-local-businesses">Read the comparison</a>
-      </div>
-      <div class="res-start-card">
-        <h3>Need to show up in ChatGPT?</h3>
-        <p>Start with the ChatGPT visibility guide if the main question is how to become easier for AI assistants to cite and recommend.</p>
-        <a class="res-start-link" href="/how-to-rank-on-chatgpt-for-local-businesses">Read the ChatGPT guide</a>
-      </div>
-      <div class="res-start-card">
-        <h3>Need a fast reality check?</h3>
-        <p>Start with the free visibility report if you want to see how your business looks right now before choosing a bigger project.</p>
-        <a class="res-start-link" href="/free-report">Claim the free report</a>
+    <div class="fade-up" style="margin-bottom:48px">
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;border:1px solid var(--c-border);border-radius:var(--r-xl);overflow:hidden;background:var(--c-white)">
+        <div style="padding:var(--sp-8);border-right:1px solid var(--c-border)">
+          <div style="font-size:var(--t-xs);font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--c-accent);margin-bottom:var(--sp-4)">Start Here</div>
+          <h2 style="font-family:var(--font-display);font-size:var(--t-xl);font-weight:400;line-height:1.2;margin-bottom:var(--sp-4)">Choose the guide that matches your question.</h2>
+          <p style="font-size:var(--t-sm);color:var(--c-text-2);line-height:1.7;margin-bottom:var(--sp-6)">New to AI visibility? Start with a framework page. Know your gap? Jump straight to the relevant guide or case study.</p>
+          <a href="/free-report" class="btn btn-primary">Get the Free Report</a>
+        </div>
+        <div style="padding:var(--sp-7) var(--sp-6);border-right:1px solid var(--c-border)">
+          <div style="font-size:var(--t-xs);font-weight:700;color:var(--c-text-3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:var(--sp-3)">Big picture</div>
+          <h3 style="font-size:var(--t-base);font-weight:700;margin-bottom:var(--sp-3)">SEO vs GEO vs AEO</h3>
+          <p style="font-size:var(--t-sm);color:var(--c-text-2);line-height:1.65;margin-bottom:var(--sp-4)">Plain-English breakdown of what changed and what still matters for local search.</p>
+          <a style="font-size:var(--t-sm);font-weight:700;color:var(--c-accent);text-decoration:none" href="/seo-vs-geo-vs-aeo-for-local-businesses">Read the comparison &rarr;</a>
+        </div>
+        <div style="padding:var(--sp-7) var(--sp-6);border-right:1px solid var(--c-border)">
+          <div style="font-size:var(--t-xs);font-weight:700;color:var(--c-text-3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:var(--sp-3)">AI search</div>
+          <h3 style="font-size:var(--t-base);font-weight:700;margin-bottom:var(--sp-3)">Show up in ChatGPT</h3>
+          <p style="font-size:var(--t-sm);color:var(--c-text-2);line-height:1.65;margin-bottom:var(--sp-4)">How to become easier for AI assistants to cite, surface, and recommend.</p>
+          <a style="font-size:var(--t-sm);font-weight:700;color:var(--c-accent);text-decoration:none" href="/how-to-rank-on-chatgpt-for-local-businesses">Read the ChatGPT guide &rarr;</a>
+        </div>
+        <div style="padding:var(--sp-7) var(--sp-6)">
+          <div style="font-size:var(--t-xs);font-weight:700;color:var(--c-text-3);text-transform:uppercase;letter-spacing:.1em;margin-bottom:var(--sp-3)">Free check</div>
+          <h3 style="font-size:var(--t-base);font-weight:700;margin-bottom:var(--sp-3)">Reality check first</h3>
+          <p style="font-size:var(--t-sm);color:var(--c-text-2);line-height:1.65;margin-bottom:var(--sp-4)">See how your business looks right now before choosing a bigger project.</p>
+          <a style="font-size:var(--t-sm);font-weight:700;color:var(--c-accent);text-decoration:none" href="/free-report">Claim the free report &rarr;</a>
+        </div>
       </div>
     </div>
 
@@ -611,7 +598,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          ════════════════════════════════════════════════════════ -->
     <a class="res-featured fade-up" href="/blog-ntbc-ai-ready-partnership" data-category="partnership">
       <div class="res-featured-copy">
-        <div class="res-featured-tag">Partnership</div>
+        <div class="res-featured-tag"><span style="background:var(--blue);color:#fff;padding:3px 8px;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:.1em">FEATURED</span> Partnership</div>
         <h2 class="res-featured-title">AI-Ready: Shark Branding Solutions Partners with North Tampa Bay Chamber to Future-Proof Local Business</h2>
         <p class="res-featured-excerpt">A landmark partnership brings the Found, Trusted, Chosen framework to every North Tampa Bay Chamber member. Learn how local businesses can now claim a free AI Visibility Report and get a clear picture of how they appear across search, maps, and AI-powered discovery.</p>
         <div class="res-featured-footer">
@@ -724,7 +711,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- ── POST 4 ── -->
       <a class="post-card" href="/how-to-rank-on-chatgpt-for-local-businesses" data-category="ai-visibility">
         <div class="post-card-thumb">
-          <img src="ai-visibility-hero.webp" alt="How to rank on ChatGPT for local businesses" loading="lazy">
+          <img src="/ai-visibility-hero.webp" alt="How to rank on ChatGPT for local businesses" loading="lazy">
           <div class="post-card-num">04</div>
         </div>
         <div class="post-card-body">
@@ -873,10 +860,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <!-- POST 12 -->
       <a class="post-card" href="/aeo-for-local-businesses" data-category="aeo">
-        <div class="post-card-thumb thumb--teal">
-          <div class="post-card-thumb-bg"></div>
-          <div class="post-card-thumb-pattern"></div>
-          <div class="post-card-thumb-icon">AEO</div>
+        <div class="post-card-thumb">
+          <img src="https://cdn.marblism.com/Xxn8iv5N01S.webp" alt="Answer engine optimization for local businesses" loading="lazy">
           <div class="post-card-num">12</div>
         </div>
         <div class="post-card-body">
@@ -893,10 +878,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <!-- POST 13 -->
       <a class="post-card" href="/seo-vs-geo-vs-aeo-for-local-businesses" data-category="strategy">
-        <div class="post-card-thumb thumb--navy">
-          <div class="post-card-thumb-bg"></div>
-          <div class="post-card-thumb-pattern"></div>
-          <div class="post-card-thumb-icon">SEO</div>
+        <div class="post-card-thumb">
+          <img src="https://cdn.marblism.com/25pQka7nY1M.webp" alt="SEO vs GEO vs AEO comparison for local businesses" loading="lazy">
           <div class="post-card-num">13</div>
         </div>
         <div class="post-card-body">
@@ -913,10 +896,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <!-- POST 14 -->
       <a class="post-card" href="/ai-visibility-seo-for-local-businesses" data-category="ai-visibility">
-        <div class="post-card-thumb thumb--deep">
-          <div class="post-card-thumb-bg"></div>
-          <div class="post-card-thumb-pattern"></div>
-          <div class="post-card-thumb-icon">AI</div>
+        <div class="post-card-thumb">
+          <img src="https://cdn.marblism.com/cBfujCTcJHu.webp" alt="AI visibility and SEO for local businesses" loading="lazy">
           <div class="post-card-num">14</div>
         </div>
         <div class="post-card-body">
@@ -1000,6 +981,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 <script>
 (function(){
+  // Filter pills
+  var grid = document.getElementById('resourcesGrid');
+  var pills = document.querySelectorAll('.filter-pill');
+  pills.forEach(function(pill){
+    pill.addEventListener('click', function(){
+      pills.forEach(function(p){ p.classList.remove('active'); });
+      pill.classList.add('active');
+      var cat = pill.getAttribute('data-category');
+      if(!grid) return;
+      grid.querySelectorAll('[data-category]').forEach(function(card){
+        if(cat === 'all' || card.getAttribute('data-category') === cat){
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+  // Load more — hide since all posts shown
+  var loadMore = document.querySelector('.res-load-more');
+  if(loadMore) loadMore.style.display = 'none';
+
   var t=document.getElementById('navToggle'),m=document.getElementById('navMobile'),n=document.getElementById('nav');
   if(t&&m){t.addEventListener('click',function(){var o=m.classList.contains('open');m.classList.toggle('open',!o);m.hidden=o;t.setAttribute('aria-expanded',String(!o));});}
   if(n){window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>20);},{passive:true});}
