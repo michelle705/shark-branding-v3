@@ -560,22 +560,6 @@
 </footer>
 
 <script src="main.js"></script>
-<script>
-(function(){
-  var t=document.getElementById('navToggle'),m=document.getElementById('navMobile'),n=document.getElementById('nav');
-  if(t&&m){t.addEventListener('click',function(){var o=m.classList.contains('open');m.classList.toggle('open',!o);m.hidden=o;t.setAttribute('aria-expanded',String(!o));});}
-  if(n){window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>20);},{passive:true});}
-  if('IntersectionObserver' in window){
-    document.body.classList.add('js');
-    var els=document.querySelectorAll('[data-animate]');
-    els.forEach(function(el){el.classList.add('will-animate');});
-    var obs=new IntersectionObserver(function(entries){
-      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
-    },{threshold:0.1});
-    els.forEach(function(el){obs.observe(el);});
-  }
-})();
-</script>
 <script src="https://cdn.apigateway.co/webchat-client..prod/sdk.js" data-widget-id="8ee4a57a-2a34-11f1-a54e-268b4f3b96a8" defer></script>
 </body>
 </html>

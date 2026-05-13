@@ -117,6 +117,7 @@ const currentPath = normalizePath(window.location.pathname);
 const isHomePath = currentPath === '' || currentPath === '/' || currentPath.endsWith('/index.html');
 const isAboutPath = /(?:^|\/)about(?:\.html)?$/.test(currentPath);
 const isContactPath = /(?:^|\/)contact(?:\.html)?$/.test(currentPath);
+const isConsultingPath = /(?:^|\/)(ai-visibility-consulting|local-seo-visibility-audit|geo-for-local-businesses|aeo-for-local-businesses|seo-vs-geo-vs-aeo-for-local-businesses|ai-visibility-seo-for-local-businesses|what-is-geo-and-why-it-matters-for-local-businesses)(?:\.html)?$/.test(currentPath);
 const isPortfolioPath = /(?:^|\/)(portfolio|hvac-local-seo-case-study|emorys-rock-realty-ai-visibility-case-study|north-tampa-bay-chamber-ai-visibility-case-study)(?:\.html)?$/.test(currentPath);
 const isWorkshopsPath = /(?:^|\/)(workshops|ai & marketing workshops in tampa bay|workshop-[^/]+)(?:\.html)?$/.test(currentPath);
 const isArticlesPath = currentPath.endsWith('/ai-resources')
