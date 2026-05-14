@@ -102,6 +102,15 @@
 <style>
 /* ── HOMEPAGE-SPECIFIC ── */
 
+/* Hackathon Banner */
+.hackathon-banner{display:block;background:#0a0a0a;border-bottom:2px solid #19D3E0;overflow:hidden;white-space:nowrap;text-decoration:none;cursor:pointer;position:relative;z-index:99}
+.hackathon-banner:hover{background:#111}
+.hackathon-track{display:inline-flex;animation:hackathon-scroll 28s linear infinite}
+.hackathon-banner:hover .hackathon-track{animation-play-state:paused}
+.hackathon-track span{display:inline-block;padding:11px 0;font-family:'JetBrains Mono','Outfit',monospace;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#19D3E0}
+@keyframes hackathon-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(max-width:600px){.hackathon-track span{font-size:11px;padding:10px 0}}
+
 /* Hero */
 .hero {
   background:
@@ -356,6 +365,13 @@
     <a href="/free-report" class="btn btn-primary">Free Visibility Report</a>
   </div>
 </nav>
+
+<a href="https://sharkaihackathon2.pages.dev/" target="_blank" rel="noopener" class="hackathon-banner" aria-label="Shark AI Hackathon — May 26, register now">
+  <div class="hackathon-track">
+    <span>&#9889; SHARK AI HACKATHON &mdash; MAY 26 &nbsp;&bull;&nbsp; COME TRY TO BREAK OUR AI EMPLOYEES &nbsp;&bull;&nbsp; ZEPHYRHILLS, FL &nbsp;&bull;&nbsp; FREE TO JOIN &nbsp;&bull;&nbsp; 45 SEATS ONLY &nbsp;&bull;&nbsp;</span>
+    <span aria-hidden="true">&#9889; SHARK AI HACKATHON &mdash; MAY 26 &nbsp;&bull;&nbsp; COME TRY TO BREAK OUR AI EMPLOYEES &nbsp;&bull;&nbsp; ZEPHYRHILLS, FL &nbsp;&bull;&nbsp; FREE TO JOIN &nbsp;&bull;&nbsp; 45 SEATS ONLY &nbsp;&bull;&nbsp;</span>
+  </div>
+</a>
 
 <main>
 
