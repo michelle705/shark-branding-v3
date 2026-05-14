@@ -189,7 +189,7 @@ const renderSharedNav = () => {
 
   nav.innerHTML = `
   <div class="nav-inner">
-    <a href="${ROUTES.home}" class="nav-logo"><img src="logo.png" alt="Shark Branding Solutions" height="58" style="display:block"></a>
+    <a href="${ROUTES.home}" class="nav-logo"><img src="/logo.png" alt="Shark Branding Solutions" height="58" style="display:block"></a>
     <ul class="nav-links">
       <li>${createNavLinkMarkup({ href: ROUTES.home, label: 'Home', active: isHomePath })}</li>
       <li>${createNavLinkMarkup({ href: ROUTES.workshops, label: 'Workshops', active: isWorkshopsPath })}</li>
@@ -264,7 +264,7 @@ const renderSharedFooter = () => {
   footer.innerHTML = `
   <div class="container footer-inner">
     <div class="footer-brand">
-      <a href="${ROUTES.home}" class="nav-logo"><img src="logo.png" alt="Shark Branding Solutions" height="50" loading="lazy" decoding="async" style="display:block"></a>
+      <a href="${ROUTES.home}" class="nav-logo"><img src="/logo.png" alt="Shark Branding Solutions" height="50" loading="lazy" decoding="async" style="display:block"></a>
       <p>Your customers are already searching.<br>The question is - are they finding you?</p>
       <div class="footer-social">
         <a href="https://www.linkedin.com/company/shark-branding-solutions" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg></a>

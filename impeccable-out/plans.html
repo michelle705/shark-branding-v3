@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Visibility Toolkit Pricing | Shark Branding Solutions</title>
-<meta name="description" content="Two ways to use the AI Visibility Toolkit — DIY at $497/month or Done For You at $2,000/month. North Tampa Bay Chamber members ask about exclusive pricing.">
+<meta name="description" content="Two ways to use the AI Visibility Toolkit — Self-Guided at $497/month or Done For You at $2,000/month. North Tampa Bay Chamber members ask about exclusive pricing.">
 <link rel="canonical" href="https://sharkbrandingsolutions.com/plans">
 <meta property="og:title" content="AI Visibility Toolkit Pricing | Shark Branding Solutions">
-<meta property="og:description" content="DIY or Done For You — two clear paths to stronger AI visibility for Tampa Bay local businesses.">
+<meta property="og:description" content="Stop being invisible to AI search. Two plans to get your Tampa Bay business found on Google, ChatGPT, and Gemini — without paid ads.">
 <meta property="og:url" content="https://sharkbrandingsolutions.com/plans">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://sharkbrandingsolutions.com/opengraph.jpg">
@@ -22,7 +22,7 @@
   "@type": "WebPage",
   "name": "AI Visibility Toolkit Pricing",
   "url": "https://sharkbrandingsolutions.com/plans",
-  "description": "Two ways to use the AI Visibility Toolkit — DIY guided plan or fully done-for-you monthly support.",
+  "description": "Two ways to use the AI Visibility Toolkit — Self-Guided plan or fully Done For You monthly support.",
   "provider": { "@id": "https://sharkbrandingsolutions.com/#organization" }
 }
 </script>
@@ -49,17 +49,38 @@
   padding: var(--sp-20) var(--sp-6) var(--sp-16);
   text-align: center;
 }
-.plans-hero-inner h1 { max-width: 700px; margin-inline: auto; margin-bottom: var(--sp-5); }
-.plans-hero-inner p { max-width: 560px; margin-inline: auto; }
+.plans-hero-inner h1 { max-width: 780px; margin-inline: auto; margin-bottom: var(--sp-5); }
+.plans-hero-inner > p { max-width: 600px; margin-inline: auto; }
+
+/* Proof strip inside hero */
+.plans-proof-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-5);
+  flex-wrap: wrap;
+  margin: var(--sp-8) auto var(--sp-2);
+  max-width: 720px;
+}
+.plans-proof-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--t-sm);
+  font-weight: 600;
+  color: var(--c-text-2);
+}
+.plans-proof-item svg { color: var(--c-accent); flex-shrink: 0; }
+.plans-proof-sep { width: 1px; height: 16px; background: var(--c-border); }
 
 /* Pricing cards */
 .pricing-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--sp-6);
-  max-width: 900px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--sp-5);
+  max-width: 1100px;
   margin-inline: auto;
-  margin-top: var(--sp-12);
+  margin-top: var(--sp-10);
 }
 
 .pricing-card {
@@ -72,7 +93,6 @@
   flex-direction: column;
   transition: box-shadow var(--trans), transform var(--trans);
 }
-
 .pricing-card:hover { box-shadow: var(--sh-xl); transform: translateY(-4px); }
 
 .pricing-card--featured {
@@ -81,39 +101,40 @@
 }
 .pricing-card--featured:hover { box-shadow: 0 16px 60px var(--c-accent-glow); }
 
+.pricing-card--custom {
+  border-color: var(--c-border);
+  border-style: dashed;
+  box-shadow: var(--sh-sm);
+}
+
 .pricing-card-header {
   background: linear-gradient(135deg, var(--c-navy), var(--c-navy-mid));
-  padding: var(--sp-8) var(--sp-8) var(--sp-10);
+  padding: var(--sp-8) var(--sp-7) var(--sp-8);
   position: relative;
 }
-
 .pricing-card--featured .pricing-card-header {
-  background: linear-gradient(135deg, var(--c-navy-mid), var(--c-accent));
+  background: linear-gradient(135deg, #0d3a54, var(--c-accent));
+}
+.pricing-card--custom .pricing-card-header {
+  background: linear-gradient(135deg, #1a2a35, #2a4255);
 }
 
-.pricing-popular {
-  position: absolute;
-  top: var(--sp-4);
-  left: 50%;
-  transform: translateX(-50%);
+.pricing-badge {
+  display: inline-block;
   background: var(--c-accent);
   color: var(--c-white);
-  font-size: var(--t-xs);
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: var(--t-tracking-wider);
   text-transform: uppercase;
-  padding: 4px 16px;
+  padding: 4px 14px;
   border-radius: var(--r-full);
   white-space: nowrap;
+  margin-bottom: var(--sp-4);
 }
-
-.pricing-tier {
-  font-size: var(--t-xs);
-  font-weight: 700;
-  letter-spacing: var(--t-tracking-wider);
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
-  margin-bottom: var(--sp-3);
+.pricing-badge--muted {
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.7);
 }
 
 .pricing-name {
@@ -125,56 +146,88 @@
   margin-bottom: var(--sp-5);
 }
 
-.pricing-price {
-  font-size: clamp(36px,4vw,52px);
-  font-weight: 800;
-  color: var(--c-accent);
-  line-height: 1;
-  margin-bottom: var(--sp-2);
-}
-
-.pricing-card--featured .pricing-price { color: var(--c-white); }
-
-.pricing-cadence {
-  font-size: var(--t-sm);
-  color: rgba(255,255,255,0.45);
-}
-
-/* Pricing options within DIY card */
+/* Pricing options within Self-Guided card */
 .pricing-opts {
   display: flex;
   flex-direction: column;
   gap: var(--sp-3);
-  margin: var(--sp-5) 0 var(--sp-6);
+  margin: 0 0 var(--sp-2);
 }
-
 .pricing-opt {
   padding: var(--sp-4);
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--r-lg);
   background: rgba(255,255,255,0.06);
-  cursor: pointer;
-  transition: background var(--trans-fast), border-color var(--trans-fast);
+  text-align: left;
 }
-
-.pricing-opt:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); }
-.pricing-opt--selected { background: rgba(24,181,216,0.12); border-color: rgba(24,181,216,0.35); }
-
+.pricing-opt--selected {
+  background: rgba(24,181,216,0.12);
+  border-color: rgba(24,181,216,0.35);
+}
+.opt-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-1);
+}
 .opt-price {
   font-size: var(--t-lg);
   font-weight: 800;
   color: var(--c-white);
-  margin-bottom: var(--sp-1);
 }
-
+.opt-savings {
+  font-size: var(--t-xs);
+  font-weight: 700;
+  color: var(--c-accent);
+  background: rgba(24,181,216,0.15);
+  border-radius: var(--r-full);
+  padding: 2px 8px;
+}
 .opt-desc {
   font-size: var(--t-xs);
   color: rgba(255,255,255,0.55);
 }
 
+/* DFY price block */
+.pricing-price-block { margin-bottom: var(--sp-3); }
+.pricing-price {
+  font-size: clamp(36px,4vw,52px);
+  font-weight: 800;
+  color: var(--c-white);
+  line-height: 1;
+  margin-bottom: 2px;
+}
+.pricing-cadence {
+  font-size: var(--t-sm);
+  color: rgba(255,255,255,0.5);
+}
+
+/* Inline proof callout inside DFY card header */
+.pricing-proof-callout {
+  margin-top: var(--sp-4);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--r-lg);
+  padding: var(--sp-3) var(--sp-4);
+  font-size: var(--t-xs);
+  color: rgba(255,255,255,0.8);
+  text-align: left;
+  line-height: 1.5;
+}
+.pricing-proof-callout strong { color: var(--c-white); }
+
+/* Custom card price */
+.pricing-price--custom {
+  font-size: clamp(28px,3vw,38px);
+  font-weight: 800;
+  color: var(--c-white);
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
 /* Card body */
 .pricing-card-body {
-  padding: var(--sp-8);
+  padding: var(--sp-7);
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -194,10 +247,9 @@
   display: flex;
   flex-direction: column;
   gap: var(--sp-3);
-  margin-bottom: var(--sp-8);
+  margin-bottom: var(--sp-6);
   flex: 1;
 }
-
 .pricing-features li {
   display: flex;
   align-items: flex-start;
@@ -206,7 +258,6 @@
   color: var(--c-text-2);
   line-height: var(--t-line-snug);
 }
-
 .pricing-features li::before {
   content: '';
   width: 18px;
@@ -220,6 +271,47 @@
   margin-top: 1px;
   flex-shrink: 0;
 }
+
+/* Guarantee note inside card */
+.pricing-guarantee {
+  font-size: var(--t-xs);
+  color: var(--c-text-3);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-5);
+  line-height: 1.5;
+}
+.pricing-guarantee svg { flex-shrink: 0; color: var(--c-accent); margin-top: 1px; }
+
+/* Grid-level trust note */
+.pricing-trust-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-6);
+  flex-wrap: wrap;
+  margin-top: var(--sp-6);
+}
+.pricing-trust-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--t-xs);
+  color: var(--c-text-3);
+  font-weight: 500;
+}
+.pricing-trust-item svg { color: var(--c-accent); }
+
+/* 3-month footnote */
+.plan-alt-link {
+  text-align: center;
+  font-size: var(--t-xs);
+  color: var(--c-text-3);
+  margin-top: var(--sp-3);
+}
+.plan-alt-link a { color: var(--c-accent); font-weight: 600; text-decoration: none; }
+.plan-alt-link a:hover { text-decoration: underline; }
 
 /* Proof ranking table */
 .rank-table {
@@ -245,6 +337,36 @@
 .rank-table td:last-child { color: var(--c-text-1); font-weight: 700; }
 .rank-table tr:last-child td { border-bottom: none; }
 
+/* Objection cards (replaces "How to Choose") */
+.objection-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-5);
+  max-width: 900px;
+  margin-inline: auto;
+  margin-top: var(--sp-12);
+}
+.objection-card {
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-xl);
+  padding: var(--sp-7);
+  box-shadow: var(--sh-sm);
+}
+.objection-card h3 {
+  font-size: var(--t-base);
+  font-weight: 700;
+  color: var(--c-text-1);
+  margin-bottom: var(--sp-3);
+  line-height: var(--t-line-snug);
+}
+.objection-card p {
+  font-size: var(--t-sm);
+  color: var(--c-text-2);
+  line-height: var(--t-line-relaxed);
+  margin: 0;
+}
+
 /* Chamber card */
 .chamber-card {
   background: var(--c-white);
@@ -259,7 +381,6 @@
   max-width: 900px;
   margin-inline: auto;
 }
-
 .chamber-logo-wrap {
   background: var(--c-bg-secondary);
   border: 1px solid var(--c-border);
@@ -270,37 +391,17 @@
   justify-content: center;
   flex-shrink: 0;
 }
-
 .chamber-logo-wrap img { width: 160px; height: auto; display: block; }
 
-/* How to choose */
-.choose-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--sp-5);
-  max-width: 900px;
-  margin-inline: auto;
-  margin-top: var(--sp-12);
-}
-
-.choose-card {
-  background: var(--c-white);
-  border: 1px solid var(--c-border);
-  border-radius: var(--r-xl);
-  padding: var(--sp-8);
-  box-shadow: var(--sh-sm);
-}
-
-.choose-card h3 { font-size: var(--t-lg); font-weight: 700; color: var(--c-text-1); margin-bottom: var(--sp-4); }
-.choose-list { list-style: none; display: flex; flex-direction: column; gap: var(--sp-3); }
-.choose-list li { display: flex; align-items: flex-start; gap: var(--sp-3); font-size: var(--t-sm); color: var(--c-text-2); line-height: var(--t-line-snug); }
-.choose-list li::before { content: '→'; color: var(--c-accent); font-weight: 700; flex-shrink: 0; }
-
-@media(max-width:768px){
+@media(max-width:900px){
   .pricing-grid { grid-template-columns: 1fr; max-width: 480px; }
-  .choose-grid { grid-template-columns: 1fr; max-width: 480px; }
+  .objection-grid { grid-template-columns: 1fr; max-width: 480px; }
+}
+@media(max-width:768px){
+  .plans-proof-sep { display: none; }
   .chamber-card { grid-template-columns: 1fr; text-align: center; }
   .chamber-logo-wrap { margin-inline: auto; }
+  .pricing-trust-row { gap: var(--sp-4); }
 }
 </style>
 </head>
@@ -353,121 +454,148 @@
       <span>Pricing</span>
     </nav>
     <div class="eyebrow eyebrow--center">AI Visibility Toolkit</div>
-    <h1>Two paths. Same destination.</h1>
-    <p class="t-lead">Pick the DIY option if your team wants to execute the framework internally. Pick Done For You if you want monthly hands-on support from the team.</p>
+    <h1>Get found on Google, ChatGPT, and Gemini&nbsp;&mdash; without paying for ads.</h1>
+    <p class="t-lead">AI search engines are already recommending your competitors. These plans make sure they recommend you instead. One puts the work in your hands. One puts it in ours.</p>
 
+    <!-- Proof strip — above pricing grid where it creates the most anxiety relief -->
+    <div class="plans-proof-strip">
+      <div class="plans-proof-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        HVAC client: #32 &rarr; #2 in 30 days
+      </div>
+      <div class="plans-proof-sep"></div>
+      <div class="plans-proof-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        No paid ads. Just foundational work.
+      </div>
+      <div class="plans-proof-sep"></div>
+      <div class="plans-proof-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        North Tampa Bay Chamber partner
+      </div>
+    </div>
+
+    <!-- PRICING GRID: 3 cards for anchoring -->
     <div class="pricing-grid">
 
-      <!-- DIY -->
+      <!-- CARD 1: Self-Guided -->
       <div class="pricing-card" data-animate>
         <div class="pricing-card-header">
-          <div class="pricing-tier">Option 01</div>
-          <div class="pricing-name">AI Visibility Toolkit<br>Done With You</div>
+          <div class="pricing-badge pricing-badge--muted">Toolkit &mdash; Self-Guided</div>
+          <div class="pricing-name">You run it.<br>We built the map.</div>
           <div class="pricing-opts">
             <div class="pricing-opt pricing-opt--selected">
-              <div class="opt-price">$497<span style="font-size:var(--t-sm);font-weight:500;color:rgba(255,255,255,0.5)">/month</span></div>
-              <div class="opt-desc">12-month commitment &mdash; best long-term value</div>
-            </div>
-            <div class="pricing-opt">
-              <div class="opt-price">$597<span style="font-size:var(--t-sm);font-weight:500;color:rgba(255,255,255,0.5)">/month</span></div>
-              <div class="opt-desc">3-month commitment &mdash; faster ramp</div>
+              <div class="opt-row">
+                <div class="opt-price">$497<span style="font-size:var(--t-sm);font-weight:500;color:rgba(255,255,255,0.5)">/mo</span></div>
+                <div class="opt-savings">Save $1,200</div>
+              </div>
+              <div class="opt-desc">12-month commitment &mdash; best value</div>
             </div>
           </div>
         </div>
         <div class="pricing-card-body">
-          <div class="pricing-includes">What's included</div>
+          <div class="pricing-includes">What&rsquo;s included</div>
           <ul class="pricing-features">
-            <li>Full toolkit structure for visibility, trust signals, listings, and AI readiness</li>
-            <li>Clear action steps your team works through in sequence</li>
-            <li>Guidance on what to prioritize first and why</li>
-            <li>Support for stronger local search and AI visibility signals</li>
-            <li>The right path for businesses building the system in-house</li>
+            <li>Full AI Visibility Toolkit framework &mdash; the same system our team uses for managed clients</li>
+            <li>Step-by-step action plan across listings, reviews, AI signals, and local content</li>
+            <li>Clear priority sequence so your team always knows what to work on next</li>
+            <li>Templates and implementation guides for each phase</li>
+            <li>Structured to produce measurable visibility movement within 90 days</li>
           </ul>
-          <a href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-86b5809a824f464dba5ad90dded570a445f76b19f0384d9dbe734b750f7256989d1db28afa4647bd929885d1678f5099?locale=EN_US&cta=saveandcopylink" class="btn btn-dark" target="_blank" rel="noopener noreferrer" style="width:100%;justify-content:center">Buy 12-Month Plan</a>
-          <a href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-9454fee56f394fdfb63ff800cf994d5794634439ed8b4ae7813be49ad385ec7f0bd37ee6cfe54dfd877a039d2862d07c?locale=EN_US&cta=saveandcopylink" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="width:100%;justify-content:center;margin-top:var(--sp-3)">Buy 3-Month Plan</a>
+          <div class="pricing-guarantee">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            No results in 90 days? We extend your plan at no cost.
+          </div>
+          <a href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-86b5809a824f464dba5ad90dded570a445f76b19f0384d9dbe734b750f7256989d1db28afa4647bd929885d1678f5099?locale=EN_US&cta=saveandcopylink" class="btn btn-dark" target="_blank" rel="noopener noreferrer" style="width:100%;justify-content:center">Start the 12-Month Plan &mdash; $497/mo</a>
+          <div class="plan-alt-link">Prefer a shorter commitment? <a href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-9454fee56f394fdfb63ff800cf994d5794634439ed8b4ae7813be49ad385ec7f0bd37ee6cfe54dfd877a039d2862d07c?locale=EN_US&cta=saveandcopylink" target="_blank" rel="noopener noreferrer">3-month plan at $597/mo &rarr;</a></div>
         </div>
       </div>
 
-      <!-- Done For You -->
-      <div class="pricing-card pricing-card--featured" data-animate data-delay="150">
-        <div class="pricing-popular">Most Popular</div>
+      <!-- CARD 2: Done For You (featured) -->
+      <div class="pricing-card pricing-card--featured" data-animate data-delay="100">
         <div class="pricing-card-header">
-          <div class="pricing-tier">Option 02</div>
-          <div class="pricing-name">AI Visibility Toolkit<br>Done For You</div>
-          <div class="pricing-price">$2,000</div>
-          <div class="pricing-cadence">per month</div>
+          <div class="pricing-badge">Recommended</div>
+          <div class="pricing-name">Toolkit &mdash;<br>Done For You</div>
+          <div class="pricing-price-block">
+            <div class="pricing-price">$2,000</div>
+            <div class="pricing-cadence">per month &mdash; no annual lock-in required</div>
+          </div>
+          <div class="pricing-proof-callout">
+            <strong>This is what that work costs.</strong> One HVAC client moved from position #32 &rarr; #2 in 30 days across four high-intent keywords. No paid ads &mdash; just this framework executed by our team.
+          </div>
         </div>
         <div class="pricing-card-body">
-          <div class="pricing-includes">What's included</div>
+          <div class="pricing-includes">What&rsquo;s included</div>
           <ul class="pricing-features">
-            <li>Everything in the Done With You plan</li>
-            <li>Monthly hands-on implementation by the team</li>
-            <li>Deeper AI visibility analysis and audit</li>
-            <li>Strategy and execution plan built for your business</li>
-            <li>Monthly progress review and next-step recommendations</li>
-            <li>The right path for businesses that want momentum without managing execution</li>
+            <li>Google Business Profile updated and optimized every month by our team</li>
+            <li>Citation consistency, schema markup, and AI readiness signals maintained and expanded</li>
+            <li>Full audit of how ChatGPT, Gemini, and Google AI Overview currently see your business</li>
+            <li>Written strategy plan tailored to your market, location, and competitors</li>
+            <li>Monthly report: what changed, what moved, what&rsquo;s targeted next</li>
+            <li>Everything from the Self-Guided Toolkit, fully executed for you</li>
           </ul>
-          <a href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-98497518b305454980c1a55eb30bffaf128ceb77a8aa42078ac6afb0ba6ccde3439958261aab46f0866337d1362d6ea7?locale=EN_US&cta=saveandcopylink" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="width:100%;justify-content:center">Buy Done For You</a>
-          <a href="/contact" class="btn btn-outline" style="width:100%;justify-content:center;margin-top:var(--sp-3)">Request Consultation</a>
+          <div class="pricing-guarantee">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            No results in 90 days? We extend your plan at no cost.
+          </div>
+          <a href="https://connect.intuit.com/portal/app/CommerceNetwork/view/scs-v1-98497518b305454980c1a55eb30bffaf128ceb77a8aa42078ac6afb0ba6ccde3439958261aab46f0866337d1362d6ea7?locale=EN_US&cta=saveandcopylink" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="width:100%;justify-content:center">Start Done For You &mdash; $2,000/mo</a>
         </div>
       </div>
 
+      <!-- CARD 3: Custom / Agency (decoy anchor) -->
+      <div class="pricing-card pricing-card--custom" data-animate data-delay="200">
+        <div class="pricing-card-header">
+          <div class="pricing-badge pricing-badge--muted">Custom / Multi-Location</div>
+          <div class="pricing-name">Full-Service<br>Custom Scope</div>
+          <div class="pricing-price--custom">Let&rsquo;s talk</div>
+          <div class="pricing-cadence" style="margin-top:4px">Starting at $4,000/mo</div>
+        </div>
+        <div class="pricing-card-body">
+          <div class="pricing-includes">Built for</div>
+          <ul class="pricing-features">
+            <li>Multi-location businesses needing visibility across several markets</li>
+            <li>Agencies managing AI visibility for their own clients</li>
+            <li>Businesses needing a dedicated account lead and custom reporting</li>
+            <li>Organizations requiring white-glove onboarding and strategy workshops</li>
+            <li>Priority support and direct team access</li>
+          </ul>
+          <div style="flex:1"></div>
+          <a href="/contact" class="btn btn-outline" style="width:100%;justify-content:center">Request a Custom Quote</a>
+        </div>
+      </div>
+
+    </div><!-- /pricing-grid -->
+
+    <!-- Trust row below grid -->
+    <div class="pricing-trust-row">
+      <div class="pricing-trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        90-day results guarantee
+      </div>
+      <div class="pricing-trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        Cancel with 30 days&rsquo; notice after your minimum term
+      </div>
+      <div class="pricing-trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        No paid ads required
+      </div>
     </div>
 
-    <p style="font-size:var(--t-sm);color:var(--c-text-3);margin-top:var(--sp-6)">
-      Not sure which to pick? <a href="/free-report" style="color:var(--c-accent);font-weight:600;text-decoration:none">Start with the free report &rarr;</a>
+    <p style="font-size:var(--t-sm);color:var(--c-text-3);margin-top:var(--sp-5)">
+      Not sure yet? <a href="/free-report" style="color:var(--c-accent);font-weight:600;text-decoration:none">Start with the free visibility report &rarr;</a> It shows exactly where you stand before you commit to anything.
     </p>
-  </div>
-</section>
 
-<!-- PROOF STRIP -->
-<div class="proof-strip">
-  <div class="proof-strip-inner">
-    <div class="proof-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>HVAC: #32 &rarr; #2 in 30 days</div>
-    <div class="proof-divider"></div>
-    <div class="proof-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>No paid ads required</div>
-    <div class="proof-divider"></div>
-    <div class="proof-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>North Tampa Bay Chamber partner</div>
-  </div>
-</div>
-
-<!-- HOW TO CHOOSE -->
-<section class="section section--gray">
-  <div class="container">
-    <div class="section-head--center">
-      <div class="eyebrow eyebrow--center">How to Choose</div>
-      <h2>Pick the path that matches how you work.</h2>
-    </div>
-    <div class="choose-grid">
-      <div class="choose-card" data-animate>
-        <h3>Choose Done With You if&hellip;</h3>
-        <ul class="choose-list">
-          <li>Your team wants to own the execution</li>
-          <li>You prefer a lower monthly investment</li>
-          <li>You have internal bandwidth to follow a structured framework</li>
-          <li>You want guidance on priorities without handing off the work</li>
-        </ul>
-      </div>
-      <div class="choose-card" data-animate data-delay="100">
-        <h3>Choose Done For You if&hellip;</h3>
-        <ul class="choose-list">
-          <li>You want the team to handle implementation</li>
-          <li>You don't have internal bandwidth for execution</li>
-          <li>You want monthly momentum without managing the details</li>
-          <li>You need a deeper analysis and custom strategy plan</li>
-        </ul>
-      </div>
-    </div>
   </div>
 </section>
 
 <!-- PROOF -->
 <section class="section section--white">
   <div class="container">
-    <div class="eyebrow">Recent Result</div>
-    <h2 style="max-width:640px;margin-bottom:var(--sp-12)">This is the kind of visibility movement businesses hire us for.</h2>
+    <div class="eyebrow">Real Result</div>
+    <h2 style="max-width:640px;margin-bottom:var(--sp-10)">What this work actually does to your rankings.</h2>
     <div style="background:var(--c-bg-secondary);border:1px solid var(--c-border);border-radius:var(--r-2xl);padding:var(--sp-10);box-shadow:var(--sh-sm);max-width:860px" data-animate>
-      <p style="font-size:var(--t-md);color:var(--c-text-2);line-height:var(--t-line-loose);margin-bottom:var(--sp-8)">One HVAC company moved from weak local visibility to top positions in under 30 days for multiple high-intent searches. No paid ads. Just foundational visibility work done right.</p>
+      <p style="font-size:var(--t-md);color:var(--c-text-2);line-height:var(--t-line-loose);margin-bottom:var(--sp-8)">One HVAC company moved from weak local visibility to top positions in under 30 days across multiple high-intent searches. No paid ads. No tricks. Just foundational AI visibility work executed correctly.</p>
       <table class="rank-table">
         <thead><tr><th>Keyword</th><th>Before</th><th>After 30 days</th></tr></thead>
         <tbody>
@@ -477,15 +605,53 @@
           <tr><td>Emergency AC repair</td><td>#21</td><td>#3</td></tr>
         </tbody>
       </table>
-      <div style="margin-top:var(--sp-8)">
+      <div style="margin-top:var(--sp-8);display:flex;align-items:center;gap:var(--sp-4);flex-wrap:wrap">
         <a href="/hvac-local-seo-case-study" class="btn btn-outline">Read the Full Case Study &rarr;</a>
+        <span style="font-size:var(--t-sm);color:var(--c-text-3)">See exactly what was done and why it worked.</span>
       </div>
     </div>
   </div>
 </section>
 
+<!-- OBJECTION HANDLING (replaces "How to Choose") -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="section-head--center">
+      <div class="eyebrow eyebrow--center">Before You Commit</div>
+      <h2>Common concerns, answered directly.</h2>
+    </div>
+    <div class="objection-grid">
+
+      <div class="objection-card" data-animate>
+        <h3>&ldquo;I&rsquo;ve paid for SEO before and it didn&rsquo;t work. How is this different?&rdquo;</h3>
+        <p>Traditional SEO targets search engine algorithms. This targets AI search engines &mdash; the systems behind ChatGPT, Gemini, and Google AI Overviews that are now responsible for a growing share of local business discovery. The signals are different, the work is different, and the timeline is faster. Our HVAC client saw position movement in 30 days, not six months.</p>
+      </div>
+
+      <div class="objection-card" data-animate data-delay="80">
+        <h3>&ldquo;What actually happens after I buy?&rdquo;</h3>
+        <p>For Done For You: you&rsquo;ll receive an onboarding call within 48 hours. We audit your current AI visibility, build your strategy plan, and begin implementation in week one. For Self-Guided: you get immediate access to the full toolkit framework with a clear priority sequence so your team knows exactly what to do first.</p>
+      </div>
+
+      <div class="objection-card" data-animate data-delay="160">
+        <h3>&ldquo;How long until I see results?&rdquo;</h3>
+        <p>Visibility signals typically begin moving within 30&ndash;60 days. Significant position changes &mdash; like the HVAC results above &mdash; can happen faster with consistent execution. That&rsquo;s why we back both plans with a 90-day guarantee: if you don&rsquo;t see measurable movement, we extend your plan at no cost.</p>
+      </div>
+
+      <div class="objection-card" data-animate data-delay="240">
+        <h3>&ldquo;Is there a contract? Can I cancel?&rdquo;</h3>
+        <p>The Self-Guided plan has a 12-month or 3-month minimum commitment &mdash; after that, cancel with 30 days&rsquo; notice. Done For You has no required annual contract; you can cancel with 30 days&rsquo; notice at any time. If you want to discuss a custom arrangement, <a href="/contact" style="color:var(--c-accent);font-weight:600;text-decoration:none">reach out directly</a>.</p>
+      </div>
+
+    </div>
+
+    <p style="text-align:center;margin-top:var(--sp-8);font-size:var(--t-sm);color:var(--c-text-3)">
+      Have a question not answered here? <a href="/contact" style="color:var(--c-accent);font-weight:600;text-decoration:none">Talk to the team before you commit &rarr;</a>
+    </p>
+  </div>
+</section>
+
 <!-- CHAMBER -->
-<section class="section section--gray section--sm">
+<section class="section section--white section--sm">
   <div class="container">
     <div class="eyebrow eyebrow--center" style="justify-content:center;margin-bottom:var(--sp-8)">North Tampa Bay Chamber Members</div>
     <div class="chamber-card" data-animate>
@@ -505,29 +671,44 @@
 </section>
 
 <!-- FAQ -->
-<section class="section section--white">
+<section class="section section--gray">
   <div class="container">
     <div class="section-head--center">
       <div class="eyebrow eyebrow--center">FAQ</div>
-      <h2>Toolkit questions</h2>
+      <h2>Questions about the toolkit</h2>
     </div>
     <div class="faq-list">
+
       <div class="faq-item">
-        <button class="faq-question">Which option should I start with?<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-        <div class="faq-answer">Choose Done With You if your team wants the framework and plans to execute it internally. Choose Done For You if you want ongoing monthly support and implementation handled by our team. Either way, start with the free visibility report — it makes the right choice obvious.</div>
+        <button class="faq-question">Which plan should I choose?<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+        <div class="faq-answer">If your team has bandwidth to execute a structured framework internally, start with Self-Guided. If you want the work done for you &mdash; no managing, no wondering if you&rsquo;re doing it right &mdash; choose Done For You. Either way, start with the free visibility report: it makes the right call obvious before you spend a dollar.</div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-question">Are both DIY pricing options still available?<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-        <div class="faq-answer">Yes. The Done With You toolkit is $497/month for a 12-month commitment or $597/month for a 3-month commitment. Both use the same framework — the difference is the length of commitment.</div>
+        <button class="faq-question">Are both Self-Guided commitment lengths available?<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+        <div class="faq-answer">Yes. The 12-month plan is $497/month &mdash; that&rsquo;s a saving of $1,200 compared to paying $597/month for twelve months. The 3-month plan is $597/month for businesses that want to test the framework before committing longer. Both include the exact same toolkit.</div>
       </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What does &ldquo;AI visibility&rdquo; actually mean for a local business?<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+        <div class="faq-answer">When someone asks ChatGPT, Gemini, or Google&rsquo;s AI Overviews &ldquo;who is the best HVAC company near me?&rdquo; &mdash; AI systems pull from citation data, reviews, local listings, and structured content signals to decide which businesses to mention. If those signals aren&rsquo;t in order, your business gets skipped. This toolkit fixes that systematically.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Does this work for my industry?<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+        <div class="faq-answer">The framework applies to any local service business that relies on customers finding them online &mdash; HVAC, real estate, legal, medical, home services, restaurants, retail, and more. The signals AI systems look for are consistent across industries. If your customers search locally, this applies to you.</div>
+      </div>
+
       <div class="faq-item">
         <button class="faq-question">Is there special pricing for Chamber members?<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-        <div class="faq-answer">Yes. North Tampa Bay Chamber members can request member-only AI Visibility Toolkit pricing directly from the team. We keep that pricing off the public page and share it directly with qualified members.</div>
+        <div class="faq-answer">Yes. North Tampa Bay Chamber members can request member-only pricing directly from the team. We keep that off the public page and share it directly with qualified members. Use the Chamber toolkit page or contact us directly.</div>
       </div>
+
       <div class="faq-item">
-        <button class="faq-question">Where should I start if I'm not sure?<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-        <div class="faq-answer">Start with the free visibility report. It shows exactly where your business stands across search, listings, reviews, and AI tools — so the right path becomes obvious before you commit to anything.</div>
+        <button class="faq-question">Where should I start if I&rsquo;m not ready to buy?<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+        <div class="faq-answer">Start with the free visibility report. It shows exactly where your business stands across local search, AI tools, listings, and reviews. Most business owners are surprised by what they find &mdash; and it makes the right next step obvious without any pressure to commit.</div>
       </div>
+
     </div>
   </div>
 </section>
@@ -536,12 +717,12 @@
 <section class="section cta-section">
   <div class="cta-section-grid"></div>
   <div class="cta-inner">
-    <div class="eyebrow eyebrow--center" style="margin-bottom:var(--sp-5)">Best starting point</div>
-    <h2>Start with the free report. Then choose.</h2>
-    <p>The free report gives you a clearer picture of where your business stands. From there, the right toolkit option is much easier to pick.</p>
+    <div class="eyebrow eyebrow--center" style="margin-bottom:var(--sp-5)">Zero commitment to start</div>
+    <h2>See where you stand before you spend a dollar.</h2>
+    <p>The free report shows exactly how visible your business is across Google, ChatGPT, Gemini, and local listings. Most owners are surprised. From there, the right plan is obvious.</p>
     <div class="cta-actions">
       <a href="/free-report" class="btn btn-primary btn-xl">Get My Free Visibility Report</a>
-      <a href="/contact" class="btn btn-ghost btn-xl">Talk to the Team</a>
+      <a href="/contact" class="btn btn-ghost btn-xl">Talk to the Team First</a>
     </div>
   </div>
 </section>
@@ -552,7 +733,7 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <img src="logo.webp" alt="Shark Branding Solutions">
-      <p>Your customers are already searching.<br>The question is — are they finding you?</p>
+      <p>Your customers are already searching.<br>The question is &mdash; are they finding you?</p>
       <div class="footer-social">
         <a href="https://www.linkedin.com/company/shark-branding-solutions" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg></a>
         <a href="https://www.facebook.com/sharkbrandingsolutions" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
