@@ -479,7 +479,7 @@ h1 em, h2 em, .t-display em, .t-h1 em, .t-h2 em {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  height: var(--nav-h);
+  min-height: var(--nav-h);
   background: rgba(255,255,255,0.88);
   backdrop-filter: saturate(180%) blur(24px);
   -webkit-backdrop-filter: saturate(180%) blur(24px);
@@ -496,11 +496,10 @@ h1 em, h2 em, .t-display em, .t-h1 em, .t-h2 em {
   display: flex;
   align-items: center;
   gap: var(--sp-4);
-  height: 100%;
+  height: var(--nav-h);
   max-width: var(--max-w);
   margin-inline: auto;
   padding-inline: var(--sp-6);
-  overflow: hidden;
 }
 
 /* Logo */
@@ -549,12 +548,16 @@ h1 em, h2 em, .t-display em, .t-h1 em, .t-h2 em {
 .nav-toggle {
   display: none;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
   background: none;
   border: none;
   cursor: pointer;
-  padding: var(--sp-1);
+  padding: 0;
   margin-left: auto;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .nav-toggle span {
@@ -585,7 +588,10 @@ h1 em, h2 em, .t-display em, .t-h1 em, .t-h2 em {
 .nav-mobile.open     { display: flex; }
 
 .nav-mobile .nav-link {
-  padding: 11px 14px;
+  padding: 13px 14px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
   border-radius: var(--r-md);
   font-size: var(--t-base);
   color: var(--c-text-1);
