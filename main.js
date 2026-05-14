@@ -146,7 +146,8 @@ const ROUTES = {
   lutz: '/lutz-marketing-consultant',
   landOLakes: '/land-o-lakes-marketing-consultant',
   wesleyChapel: '/wesley-chapel-marketing-consultant',
-  stPetersburg: '/st-petersburg-marketing-consultant'
+  stPetersburg: '/st-petersburg-marketing-consultant',
+  hackathon: '/hackathon'
 };
 
 const createNavLinkMarkup = ({ href, label, active = false }) =>
@@ -210,6 +211,7 @@ const renderSharedNav = () => {
       </li>
       <li>${createNavLinkMarkup({ href: ROUTES.about, label: 'About', active: isAboutPath })}</li>
       <li>${createNavLinkMarkup({ href: ROUTES.contact, label: 'Contact', active: isContactPath })}</li>
+      <li><a href="${ROUTES.hackathon}" class="nav-link" style="color:var(--c-accent);font-weight:700">&#9889; Hackathon</a></li>
     </ul>
     <a href="${ROUTES.freeReport}" class="btn btn-primary nav-cta">Free Visibility Audit</a>
     <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navMobile"><span></span><span></span><span></span></button>
@@ -230,6 +232,7 @@ const renderSharedNav = () => {
     </div>
     ${createNavLinkMarkup({ href: ROUTES.about, label: 'About', active: isAboutPath })}
     ${createNavLinkMarkup({ href: ROUTES.contact, label: 'Contact', active: isContactPath })}
+    <a href="${ROUTES.hackathon}" class="nav-link" style="color:var(--c-accent);font-weight:700">&#9889; Hackathon</a>
     <a href="${ROUTES.freeReport}" class="btn btn-primary">Free Visibility Audit</a>
   </div>`;
 
