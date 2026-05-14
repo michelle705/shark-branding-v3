@@ -504,9 +504,6 @@
 <script src="main.js"></script>
 <script>
 (function(){
-  var t=document.getElementById('navToggle'),m=document.getElementById('navMobile'),n=document.getElementById('nav');
-  if(t&&m){t.addEventListener('click',function(){var o=m.classList.contains('open');m.classList.toggle('open',!o);m.hidden=o;t.setAttribute('aria-expanded',String(!o));});}
-  if(n){window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>20);},{passive:true});}
   document.querySelectorAll('.faq-question').forEach(function(btn){
     btn.addEventListener('click',function(){
       var item=btn.closest('.faq-item');
